@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  project: default
+  source:
+    repoURL: 'https://github.com/sofiane-wattiez/GitOps_Wsl.git'
+    targetRevision: HEAD
+    path: nginx
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
