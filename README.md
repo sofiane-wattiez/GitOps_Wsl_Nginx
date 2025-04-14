@@ -1,9 +1,9 @@
 # GitOps_Wsl
 GitOps_Wsl
 
-## Kube cmd
+# Kube env
 
-# Installer kubectl
+## Install kubectl
 ```bash
 sudo apt install -y curl apt-transport-https gnupg
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
