@@ -1,4 +1,4 @@
-# GitOps_Wsl
+# GitOps_Wsl_Nginx
 
 **Create Pod argo & nginx service with kubernetes & wsl with kali-linux**
 
